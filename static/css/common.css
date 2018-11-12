@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f2f2f2;
+}
+
+
+/* 图片自适应 */
+
+img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+	color: #969696;
+	font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+/* 禁止缩放表单 */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
+	resize: none;
+	border: none;
+}
+
+
+/*单行溢出*/
+
+.one_txt_cut {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+/*多行溢出 手机端使用*/
+
+.txt_cut {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	 -webkit-line-clamp: 2; 
+	-webkit-box-orient: vertical;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+em{
+	display: inline-block;
+}
+.right_item{
+	float: right;
+	display: inline-block;
+	width: 240rpx;
+	background: #ff8a65;
+	color: #fff;
+	text-align: center;
+	font-size: 28rpx;
+}
+
+/*列表排版通用css*/
+
+#content {
+	padding-bottom: 200rpx;
+	background: #fff;
+}
+
+#content div {
+	display: inline-block;
+}
+
+#content img {
+	width: 240rpx;
+	height: 240rpx;
+}
+
+#content li {
+	position: relative;
+	display: box;
+	box-align: center;
+	padding: 24rpx;
+	height: 280rpx;
+	border-bottom: 1px solid #eee;
+	box-sizing: border-box;
+}
+
+#content .desc {
+	margin-left: 20rpx;
+	float: right;
+	height: 240rpx;
+	width: 62%;
+	position: relative;
+}
+
+#content h5 {
+	font-size: 28rpx;
+	line-height: 60rpx;
+}
+
+#content em {
+	color: #878787;
+	font-size: 24rpx;
+	display: inline-block;
+}
+
+#content .money {
+	color: #ff8a65;
+	font-size: 32rpx;
+	display: block;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.original_price {
+	text-decoration: line-through;
+	margin-left: 10rpx;
+}
+
+/*tab切换通用样式*/
+
+#top_nav {
+	padding: 20rpx 0;
+	width: 750rpx;
+	box-sizing: border-box;
+	background: #fff;
+	margin-bottom: 20rpx;
+}
+#top_nav li {
+	float: left;
+	font-size: 30rpx;
+	text-align: center;
+}
+
+.total{
+	width: 750rpx;
+	height: 90rpx;
+	line-height: 90rpx;
+	position: fixed;
+	/*bottom: 108rpx;*/
+	bottom: 0rpx;
+	font-size: 32rpx;
+	border-top: 1px solid #ccc;
+}
+.total em{
+	color: #FF8A65;
+	font-size: 30rpx;
+}
+.grey{
+	color: #999;
+}
+
